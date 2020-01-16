@@ -1,0 +1,120 @@
+@charset "utf-8";
+::-webkit-scrollbar { width: 0 !important; }
+html, body { margin: 0; padding: 0; font-size: 14px; }
+h1, h2, h3, h4, h5, h6, p, pre, dd { margin: 0; }
+ul { padding: 0; margin: 0; }
+var { font-style: unset; }
+span, mark, a { display: inline-block; }
+mark { background: none; color: #4466F4; }
+ul, li { list-style: none; }
+progress { width: 168px; height: 16px; background: rgba(0, 0, 0, .2); }
+progress::-webkit-progress-bar { background-color: transparent; }
+progress::-webkit-progress-value { background-color: rgba(0, 64, 255, 0.7); }
+input.inputTexts{min-width:120px;height:30px;border:1px solid #00466B;border-radius:3px;outline:none;text-indent:5px;background:transparent;color:#afafaf;}
+select {min-width:120px;height:30px;border:1px solid #00466B;border-radius:3px;outline:none;text-indent:5px;cursor:pointer;background:transparent;color:#afafaf;}
+select option { padding: 4px 0; height: 35px; line-height: 35px; }
+
+/* 改变原始横向滚动条样式 */
+.scrollX {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    overflow-x: auto;
+    /*三角箭头的颜色*/
+    scrollbar-arrow-color: #bec5ca;
+    /*立体滚动条的颜色*/
+    scrollbar-face-color: #bec5ca;
+    /*立体滚动条亮边的颜色*/
+    scrollbar-3dlight-color: #bec5ca;
+    /*滚动条空白部分的颜色*/
+    scrollbar-highlight-color: #bec5ca;
+    /*立体滚动条阴影的颜色*/
+    scrollbar-shadow-color: #bec5ca;
+    /*立体滚动条强阴影的颜色*/
+    scrollbar-darkshadow-color: #bec5ca;
+    /*立体滚动条背景颜色*/
+    scrollbar-track-color: #e5e7eb;
+    /*滚动条的基本颜色*/
+    scrollbar-base-color: #e5e7eb;
+}
+.scrollX::-webkit-scrollbar {
+    width: 20px!important;          /* 纵向滚动条 宽度 */
+    height: 6px!important;          /* 横向滚动条 高度 */
+    background: #054271!important;  /* 整体背景 */
+    border-radius: 10px!important;  /* 整体 圆角 */
+}
+/* 2,滚动条两端的按钮 */
+.scrollX::-webkit-scrollbar-button{
+    width: 10px!important;          /* 横向滚动条 宽度 */
+    height: 6px!important;          /* 纵向滚动条 高度 */
+    background: #565656!important;
+    border-radius: 10px!important;
+}
+/* 3,外层轨道 */
+.scrollX::-webkit-scrollbar-track {
+    /* background: #53708e!important; */
+    border-radius: 10px!important;
+}
+/* 4.内层轨道，它会覆盖外层轨道的样式。 */
+.scrollX::-webkit-scrollbar-track-piece {
+    width: 5px!important;
+    background-color: #054271!important;
+    margin: 0 -2px 0!important;
+}
+/* 5,滑块 */
+.scrollX::-webkit-scrollbar-thumb {
+    background: #7f98ab!important;
+    min-height: 50px!important;
+    min-width: 50px!important;
+    border-radius: 10px!important;
+}
+/* 纵向滑块悬浮 */
+.scrollX::-webkit-scrollbar-thumb:vertical:hover {
+    background: #bec5ca!important;
+}
+/* 横向滑块悬浮 */
+.scrollX::-webkit-scrollbar-thumb:horizontal:hover {
+    background: #bec5ca!important;
+}
+/* 6,边角，两个滚动条交汇处 */
+.scrollX::-webkit-scrollbar-corner{
+    background: #bec5ca!important;
+}
+
+/* elementUI默认样式初始化 */
+.el-input__inner{
+    background: transparent;
+    border: 1px solid #00787f !important;
+    color: #eee !important;
+    padding: 0 30px !important;
+    border-radius: 0!important;
+}
+.input-with-input .el-input-group__append {
+    border-right: 0!important;
+}
+.jqsjjc-mod-1111 .el-input__inner {
+    padding: 0 15px!important;
+}
+.el-select .el-input__inner {
+    padding: 0 15px !important;
+}
+.el-pagination {
+    padding: 2px 0!important;
+}
+.el-pagination .btn-next, .el-pagination .btn-prev, .el-pagination .el-pager li, .el-pagination .el-dialog {
+    background: rgba(0, 255, 218, 0.2)!important;
+    color: #90c4c7!important;
+}
+.el-pagination__total {
+    color: #fff; margin: 0 0 0 4px;
+}
+.el-pagination.is-background .el-pager li:not(.disabled).active {
+    color: #e4ff00!important;
+}
+.some-class {
+    height: 290px;
+}
+.some-class .mapboxgl-popup-content {
+    height: 100%!important;
+    min-height: 140px!important;
+}    
