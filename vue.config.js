@@ -74,7 +74,7 @@ module.exports = {
     pwa: {}, // configure webpack-dev-server behavior
 
     // webpack-dev-server 相关配置
-    /* devServer: {
+    devServer: {
         open: true, //---------------------------------------浏览器自动打开页面
         host: "localhost", //--------------------------------如果是真机测试，就使用这个IP
         port: 9999, //---------------------------------------代理端口
@@ -91,7 +91,7 @@ module.exports = {
                 }
             }
         }
-    }, */
+    },
 
     // 第三方插件配置
     pluginOptions: {}
